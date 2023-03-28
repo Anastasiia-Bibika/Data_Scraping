@@ -64,7 +64,7 @@ ROBOTSTXT_OBEY = False
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
     "module_scraping.pipelines.ModuleScrapingPipeline": 300,
-    'module_scraping.pipelines.PricePipeline': 400,
+    "module_scraping.pipelines.SqlitePipeline": 300,
 }
 IMAGES_STORE = './img'
 IMAGES_EXPIRES = 0

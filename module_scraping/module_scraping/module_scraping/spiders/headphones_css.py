@@ -23,14 +23,9 @@ class HeadphonesCssSpider(scrapy.Spider):
             yield scrapy.Request(
                 url = "https://hotline.ua" + url,
                 callback=self.parse_shops,
-                meta={
-                    "Headphones":  name,
-                    "Price": price,
-                    "Image": image_url,
-                }
             )
     def parse_shops(self,response):
-        shops = response.css('div.list').css('.list-item')
+        shops = response.css('div.list').css('.list__item')
         for shop in shops:
             name = shop.css('div.shop__header').css('a.shop__title::text').get()
             url = shop.css('div.shop__header').css('a.shop__title::attr(href)').get()
