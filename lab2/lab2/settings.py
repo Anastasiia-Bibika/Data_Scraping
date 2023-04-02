@@ -12,9 +12,8 @@ BOT_NAME = "lab2"
 SPIDER_MODULES = ["lab2.spiders"]
 NEWSPIDER_MODULE = "lab2.spiders"
 
-
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-USER_AGENT = "&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36(KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36&quot;"
+USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False

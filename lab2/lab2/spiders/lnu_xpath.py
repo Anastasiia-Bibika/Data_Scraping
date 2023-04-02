@@ -5,7 +5,7 @@ from lab2.items import Lab2FacultyItem,Lab2DepartmentItem
 class LnuXpathSpider(scrapy.Spider):
     name = "lnu_xpath"
     allowed_domains = ["lnu.edu.ua"]
-    start_urls = ["http://lnu.edu.ua/"]
+    start_urls = ["http://lnu.edu.ua/about/faculties/"]
 
     def parse(self, response):
         faculty = response.xpath('//ul[contains(@class, "structural-units")]'
@@ -26,7 +26,7 @@ class LnuXpathSpider(scrapy.Spider):
                 }
             )
     def parse_faculties(self,response):
-        dep_list =response.xpath('//article[contains(@class, "content divisions")]'
+        dep_list =response.xpath('//article[contains(@class, ".divisions")]'
         ).xpath('.//*[contains(@class,"section")]')
         for secton in dep_list:
             dep_name = secton.xpath('.//h2[contains(@class,"title")]/text()').get()

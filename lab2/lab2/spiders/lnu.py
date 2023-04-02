@@ -32,8 +32,8 @@ class LnuSpider(scrapy.Spider):
         soup = BeautifulSoup(response.body,  "html.parser")
         dep_list = soup.find(class_="content divisions")
         if dep_list:
-            for secton in dep_list.find_all("section"):
-                h2 = secton.find('h2')
+            for section in dep_list.find_all("section"):
+                h2 = section.find('h2')
                 dep_name = h2.a.find(string=True, recursive=False)
                 dep_url =h2.a.get('href')
                 yield Lab2DepartmentItem(
