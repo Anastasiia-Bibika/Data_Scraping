@@ -1,0 +1,195 @@
+2023-05-21 19:55:29 [scrapy.utils.log] INFO: Scrapy 2.8.0 started (bot: lab6)
+2023-05-21 19:55:29 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.1, Twisted 22.10.0, Python 3.10.7 (tags/v3.10.7:6cc6b13, Sep  5 2022, 14:08:36) [MSC v.1933 64 bit (AMD64)], pyOpenSSL 23.0.0 (OpenSSL 3.0.8 7 Feb 2023), cryptography 39.0.1, Platform Windows-10-10.0.19045-SP0
+2023-05-21 19:55:29 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'lab6',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'logs\\lab6\\hotline\\47c6aaf3f7f811edb2fb54ee7514c1c1.log',
+ 'NEWSPIDER_MODULE': 'lab6.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['lab6.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor',
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+               '(KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36'}
+2023-05-21 19:55:29 [asyncio] DEBUG: Using selector: SelectSelector
+2023-05-21 19:55:29 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2023-05-21 19:55:29 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2023-05-21 19:55:29 [scrapy.extensions.telnet] INFO: Telnet Password: ae669dfc7175fc58
+2023-05-21 19:55:29 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapeops_scrapy.extension.ScrapeOpsMonitor']
+2023-05-21 19:55:29 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2023-05-21 19:55:29 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2023-05-21 19:55:29 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2023-05-21 19:55:29 [scrapy.core.engine] INFO: Spider opened
+2023-05-21 19:55:30 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2023-05-21 19:55:30 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.scrapeops.io:443
+2023-05-21 19:55:30 [urllib3.connectionpool] DEBUG: https://api.scrapeops.io:443 "POST /api/v1/setup/ HTTP/1.1" 401 21
+2023-05-21 19:55:30 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2023-05-21 19:55:30 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.scrapeops.io:443
+2023-05-21 19:55:30 [urllib3.connectionpool] DEBUG: https://api.scrapeops.io:443 "POST /api/v1/normalizer/domain/?domain=hotline.ua HTTP/1.1" 401 21
+2023-05-21 19:55:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hotline.ua/ua/computer/monitory/> (referer: None)
+2023-05-21 19:55:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/computer/monitory/>
+{'image_urls': ['https://hotline.ua/img/tx/333/333227088_s265.jpg'],
+ 'name': 'LG 27GN800-B',
+ 'price': '13\xa0199',
+ 'url': '/ua/computer-monitory/lg-27gn800-b/'}
+2023-05-21 19:55:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/computer/monitory/>
+{'image_urls': ['https://hotline.ua/img/tx/222/222030474_s265.jpg'],
+ 'name': 'ASUS TUF Gaming VG249Q (90LM05E0-B01170)',
+ 'price': '10\xa0461',
+ 'url': '/ua/computer-monitory/asus-vg249q-90lm05e0-b01170/'}
+2023-05-21 19:55:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/computer/monitory/>
+{'image_urls': ['https://hotline.ua/img/tx/361/361986165_s265.jpg'],
+ 'name': 'LG 27GP850-B',
+ 'price': '18\xa0879',
+ 'url': '/ua/computer-monitory/lg-27gp850-b/'}
+2023-05-21 19:55:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/computer/monitory/>
+{'image_urls': ['https://hotline.ua/img/tx/388/388246120_s265.jpg'],
+ 'name': 'Samsung S32BG700 (LS32BG700)',
+ 'price': '28\xa0090',
+ 'url': '/ua/computer-monitory/samsung-ls32bg700-black-ls32bg700eixua/'}
+2023-05-21 19:55:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/computer/monitory/>
+{'image_urls': ['https://hotline.ua/img/tx/320/320778390_s265.jpg'],
+ 'name': 'Apple Studio Display with Tilt Adjustable Stand (Standard Glass) '
+         '(MK0U3)',
+ 'price': '84\xa0019',
+ 'url': '/ua/computer-monitory/apple-studio-display-with-tilt-adjustable-stand-standard-glass-mk0u3/'}
+2023-05-21 19:55:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/computer/monitory/>
+{'image_urls': ['https://hotline.ua/img/tx/334/334022251_s265.jpg'],
+ 'name': 'Samsung S27AG500 (LS27AG500)',
+ 'price': '14\xa0064',
+ 'url': '/ua/computer-monitory/samsung-s27ag500-ls27ag500/'}
+2023-05-21 19:55:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/computer/monitory/>
+{'image_urls': ['https://hotline.ua/img/tx/386/386756899_s265.jpg'],
+ 'name': 'Dell G3223D (210-BDXV)',
+ 'price': '18\xa0765',
+ 'url': '/ua/computer-monitory/dell-g3223d-210-bdxv/'}
+2023-05-21 19:55:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/computer/monitory/>
+{'image_urls': ['https://hotline.ua/img/tx/386/386123773_s265.jpg'],
+ 'name': 'Dell UltraSharp U2723QE (210-BCXK)',
+ 'price': '28\xa0384',
+ 'url': '/ua/computer-monitory/dell-ultrasharp-u2723qe-210-bcxk/'}
+2023-05-21 19:55:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/computer/monitory/>
+{'image_urls': ['https://hotline.ua/img/tx/210/210355786_s265.jpg'],
+ 'name': 'ASUS TUF Gaming VG27AQ (90LM0500-B01370)',
+ 'price': '14\xa0072',
+ 'url': '/ua/computer-monitory/asus-vg27aq/'}
+2023-05-21 19:55:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/computer/monitory/>
+{'image_urls': ['https://hotline.ua/img/tx/383/383111717_s265.jpg'],
+ 'name': 'Alienware AW3423DW (210-BDSZ)',
+ 'price': '54\xa0053',
+ 'url': '/ua/computer-monitory/dell-aw3423dw-210-bdsz/'}
+2023-05-21 19:55:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/computer/monitory/>
+{'image_urls': ['https://hotline.ua/img/tx/387/387810571_s265.jpg'],
+ 'name': 'Dell S2522HG (210-BBBI)',
+ 'price': '10\xa0654',
+ 'url': '/ua/computer-monitory/dell-s2522hg-210-bbbi/'}
+2023-05-21 19:55:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/computer/monitory/>
+{'image_urls': ['https://hotline.ua/img/tx/264/264871406_s265.jpg'],
+ 'name': 'Samsung Odyssey G7 C32G75TQ (LC32G75TQ)',
+ 'price': '25\xa0276',
+ 'url': '/ua/computer-monitory/samsung-odyssey-g7-c32g75tq-lc32g75tq/'}
+2023-05-21 19:55:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/computer/monitory/>
+{'image_urls': ['https://hotline.ua/img/tx/238/238979015_s265.jpg'],
+ 'name': 'Samsung Odyssey G5 LC27G55T Black (LC27G55TQ)',
+ 'price': '11\xa0149',
+ 'url': '/ua/computer-monitory/samsung-odyssey-g5-lc27g55t-black-lc27g55tq/'}
+2023-05-21 19:55:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/computer/monitory/>
+{'image_urls': ['https://hotline.ua/img/tx/388/388246152_s265.jpg'],
+ 'name': 'ASUS ROG Strix XG27AQM (90LM06U5-B01370)',
+ 'price': '39\xa0051',
+ 'url': '/ua/computer-monitory/asus-rog-strix-xg27aqm-90lm06u5-b01370/'}
+2023-05-21 19:55:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/computer/monitory/>
+{'image_urls': ['https://hotline.ua/img/tx/211/211390838_s265.jpg'],
+ 'name': 'Samsung S24R350F (LS24R350F)',
+ 'price': '4\xa0912',
+ 'url': '/ua/computer-monitory/samsung-s24r350f-ls24r350f/'}
+2023-05-21 19:55:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/computer/monitory/>
+{'image_urls': ['https://hotline.ua/img/tx/383/383111845_s265.jpg'],
+ 'name': '2E 2E-G2422B-01.UA',
+ 'price': '6\xa0618',
+ 'url': '/ua/computer-monitory/2e-2e-g2422b-01ua/'}
+2023-05-21 19:55:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/computer/monitory/>
+{'image_urls': ['https://hotline.ua/img/tx/225/225041852_s265.jpg'],
+ 'name': 'MSI Optix G241',
+ 'price': '7\xa0598',
+ 'url': '/ua/computer-monitory/msi-optix-g241/'}
+2023-05-21 19:55:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/computer/monitory/>
+{'image_urls': ['https://hotline.ua/img/tx/386/386427984_s265.jpg'],
+ 'name': 'Acer Predator XB253QGXbmiiprzx (UM.KX3EE.X07)',
+ 'price': '12\xa0552',
+ 'url': '/ua/computer-monitory/acer-predator-xb253qgxbmiiprzx-umkx3eex07/'}
+2023-05-21 19:55:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/computer/monitory/>
+{'image_urls': ['https://hotline.ua/img/tx/383/383846070_s265.jpg'],
+ 'name': 'GIGABYTE G24F',
+ 'price': '7\xa0931',
+ 'url': '/ua/computer-monitory/gigabyte-g24f/'}
+2023-05-21 19:55:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/computer/monitory/>
+{'image_urls': ['https://hotline.ua/img/tx/310/310515409_s265.jpg'],
+ 'name': 'Xiaomi Mi 2K Gaming Monitor 27" (BHR5039GL, XMMNT27HQ)',
+ 'price': '14\xa0463',
+ 'url': '/ua/computer-monitory/xiaomi-mi-2k-gaming-monitor-27/'}
+2023-05-21 19:55:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/computer/monitory/>
+{'image_urls': ['https://hotline.ua/img/tx/176/176494342_s265.jpg'],
+ 'name': 'Samsung U32J590U (LU32J590UQIXCI)',
+ 'price': '9\xa0960',
+ 'url': '/ua/computer-monitory/samsung-u32j590u-lu32j590uqixci/'}
+2023-05-21 19:55:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/computer/monitory/>
+{'image_urls': ['https://hotline.ua/img/tx/332/332933541_s265.jpg'],
+ 'name': 'Samsung Odyssey G7 S28AG700 (LS28AG700)',
+ 'price': '25\xa0044',
+ 'url': '/ua/computer-monitory/huawei-odyssey-g7-s28ag700-ls28ag700/'}
+2023-05-21 19:55:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/computer/monitory/>
+{'image_urls': ['https://hotline.ua/img/tx/387/387347624_s265.jpg'],
+ 'name': 'Samsung Odyssey Neo G8 (LS32BG850NUX)',
+ 'price': '54\xa0867',
+ 'url': '/ua/computer-monitory/samsung-odyssey-neo-g8-ls32bg850nux/'}
+2023-05-21 19:55:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/computer/monitory/>
+{'image_urls': ['https://hotline.ua/img/tx/386/386428176_s265.jpg'],
+ 'name': 'Dell U2722DE (210-AYUJ)',
+ 'price': '17\xa0452',
+ 'url': '/ua/computer-monitory/dell-u2722de-210-ayuj/'}
+2023-05-21 19:55:32 [scrapy.core.engine] INFO: Closing spider (finished)
+2023-05-21 19:55:32 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.scrapeops.io:443
+2023-05-21 19:55:33 [urllib3.connectionpool] DEBUG: https://api.scrapeops.io:443 "POST /api/v1/setup/ HTTP/1.1" 401 21
+2023-05-21 19:55:33 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 308,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 73137,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 2.752968,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2023, 5, 21, 16, 55, 32, 890798),
+ 'httpcompression/response_bytes': 600510,
+ 'httpcompression/response_count': 1,
+ 'item_scraped_count': 24,
+ 'log_count/DEBUG': 34,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2023, 5, 21, 16, 55, 30, 137830)}
+2023-05-21 19:55:33 [scrapy.core.engine] INFO: Spider closed (finished)
